@@ -5,6 +5,7 @@ Biblioteca de utilitários para processamento e limpeza de HTML, com foco em rem
 ## 📋 Descrição
 
 Este projeto fornece ferramentas para:
+
 - **Limpeza de HTML**: Remove todos os atributos das tags HTML, mantendo apenas a estrutura e o conteúdo
 - **Manipulação de strings**: Funções utilitárias para processamento de texto (slugify, normalização, etc.)
 - **Manipulação de arquivos**: Leitura, escrita e processamento de arquivos
@@ -46,6 +47,7 @@ await writeFile("output.html", cleanedHtml);
 **Exemplo de transformação:**
 
 **Antes:**
+
 ```html
 <div class="container" id="main" data-test="value">
   <p style="color: red;" class="text">Conteúdo</p>
@@ -54,6 +56,7 @@ await writeFile("output.html", cleanedHtml);
 ```
 
 **Depois:**
+
 ```html
 <div>
   <p>Conteúdo</p>
@@ -208,7 +211,7 @@ npm run format:check
 
 ## 📁 Estrutura do Projeto
 
-```
+```text
 .
 ├── src/
 │   ├── config/          # Configurações do projeto
@@ -239,6 +242,7 @@ NODE_ENV=development
 ### Diretórios
 
 Por padrão, os arquivos de entrada e saída estão em:
+
 - **Entrada**: `volumes/tmp/in.txt`
 - **Saída**: `volumes/tmp/out.html`
 
@@ -294,9 +298,8 @@ ISC
 
 ## 👤 Autor
 
-[Seu nome]
+[Leandro Sbrissa](https://github.com/leguass7)
 
 ---
 
 **Nota**: Este projeto foi desenvolvido para processar e limpar HTML, removendo atributos desnecessários enquanto mantém a estrutura semântica do documento.
-
